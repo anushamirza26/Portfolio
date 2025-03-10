@@ -70,6 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+
 # Portfolio
-This is my porfolio website developed using React.js compatible for all devices
- origin/main
+ A well built portfolio about me my work and experiences, developed using react framework 
+
