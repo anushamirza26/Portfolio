@@ -1,0 +1,196 @@
+/* src/components/experience.css */
+
+#experience {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Offset slightly for smooth animation */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#experience.fadeIn {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Reset the transform */
+}
+
+.heai {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 70px;
+  color: #fff;
+  animation: slideIn 2s ease-out;
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between projects */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px; /* Space between the project card and details */
+}
+
+.project-container.odd {
+  flex-direction: row-reverse; /* Alternate layout */
+}
+
+.project-card {
+  position: relative;
+  width: 500px; /* Default width */
+  height: 290px;
+  overflow: hidden;
+  border-radius: 0px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), #000000);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-top: 50px;
+  animation: slideIn 2s ease-out;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card:hover .project-details {
+  opacity: 1;
+}
+
+.project-info {
+  text-align: left; /* Default text alignment */
+  flex: 1; /* Takes remaining space opposite the image */
+  color: white;
+}
+
+.project-info h2 {
+  margin: 0;
+  font-size: 2em; /* Default font size */
+  color: rgb(32, 100, 63);
+}
+
+.project-info h4 {
+  font-size: 1.1em; /* Default font size */
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.project-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-modal img {
+  max-width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 2em; /* Default font size */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .heai {
+      font-size: 2em; /* Reduce font size */
+      padding-top: 50px; /* Adjust padding */
+  }
+
+  .project-container {
+      flex-direction: column; /* Stack elements on smaller screens */
+      align-items: center; /* Center items */
+      gap: 20px; /* Adjust gap for mobile */
+  }
+
+  .project-card {
+      width: 100%; /* Full width on mobile */
+      height: auto; /* Adjust height */
+  }
+
+  .project-info {
+      text-align: center; /* Center text on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .heai {
+      font-size: 1.5em; /* Further reduce font size */
+  }
+
+  .project-info h2 {
+      font-size: 1.5em; /* Adjust project name size */
+  }
+
+  .project-info h4 {
+      font-size: 1em; /* Adjust project description size */
+  }
+
+  .project-card {
+      width: 100%; /* Ensure full width */
+      height: auto; /* Maintain aspect ratio */
+  }
+}

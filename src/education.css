@@ -1,0 +1,102 @@
+.education-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .heai{
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+padding: 70px;
+color: #ffff;
+animation: slideIn 2s ease-out;
+font-size: 3em;
+text-decoration: underline;  }
+  .education-row {
+    display: flex;
+    align-items: left; /* Center the items vertically */
+    margin-bottom: 20px;
+  }
+  .education-row {
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start below the view */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition properties */
+  }
+  
+  .education-row.visible {
+    opacity: 1; /* Show when in view */
+    transform: translateY(0); /* Move to original position */
+  }
+  .logo-container {
+    flex: 0 0 auto; /* Prevents the logo from growing */
+    margin-right: 20px; /* Space between logo and vertical line */
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .vertical-line {
+    width: 2px; /* Line thickness */
+    height: 130px; /* Adjust height as needed */
+    background-color: #000; /* Line color */
+    margin-right: 20px; /* Space between line and info */
+  }
+  
+  .info-container {
+    flex: 1; /* Allows the info container to take the remaining space */
+    position: relative; /* For absolute positioning of the date */
+  } 
+  h1 {
+    text-align: left;
+
+  }
+  
+  h2 {
+    text-align: left;
+    color: #4A90E2; /* Change to your preferred color */
+  }
+  
+  ul {
+    text-align: left;   
+    list-style-type: none;
+    padding: 0;
+    color: aliceblue;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  .date {
+    position: absolute; /* Position it at the top right */
+    top: 0;
+    right: 0;
+    font-size: 14px; /* Adjust font size as needed */
+    color: #ffff; /* Change to your preferred color */
+    font-style: italic ;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

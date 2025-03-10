@@ -1,0 +1,105 @@
+/* src/components/contact.css */
+
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 50vh; /* Full height of the viewport */
+  animation: slideIn 2s ease-out;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  /* Large font size */
+  color: #ffff;
+  font-size: 5em;
+  margin-left: 200px; /* Adjust margins for larger screens */
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 30px; /* Space between icons */
+}
+
+a {
+  color: #0e0303; /* Icon color */
+  text-decoration: none;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heai {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 70px;
+  color: #fff;
+  animation: slideIn 2s ease-out;
+  font-size: 4em; /* Reduce heading size */
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    height: auto; /* Allow height to adjust */
+  }
+
+  h1 {
+    font-size: 3em; /* Reduce font size for headings */
+    margin-left: 0; /* Reset margin */
+    text-align: center; /* Center-align text */
+  }
+
+  .right-section {
+    align-items: center; /* Center the right section */
+  }
+
+  .social-links {
+    flex-wrap: wrap; /* Allow social icons to wrap on smaller screens */
+    justify-content: center; /* Center the icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .heai {
+    font-size: 2em; /* Further reduce font size for very small screens */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Adjust h1 size for small devices */
+  }
+
+  .social-links {
+    gap: 15px; /* Reduce gap between icons */
+  }
+}

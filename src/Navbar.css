@@ -1,0 +1,80 @@
+.navbar {
+    background: linear-gradient(90deg, #0e0516 , #2b0444);
+    border-bottom: 2px solid #1c7396;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 80px;
+  }
+  
+  .navbar-brand {
+    font-size: 2.0rem !important;  
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffffce !important;  
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .navbar-brand-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; 
+    border: 2px solid #ffffffce; 
+  }
+  .navbar-brand:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Navbar Links */
+  .navcus {
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    gap: 10px;
+  }
+  
+  .nav-link:hover {
+    color: #69b5be !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+  
+  
+  .nav-link.active {
+    color: #69b5be !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+ 
+  .navbar-toggler {
+    border-color: #69b5be !important;
+  }
+  
+
+  /* Adjust spacing and responsiveness */
+  @media (max-width: 991px) {
+    .navbar {
+      padding: 1rem;
+    }
+  }
+  
+  /* Mobile specific styles */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.3rem !important;
+    }
+    .nav-link {
+      font-size: 1rem;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+  
+  /* Add slight shadow on hover for more depth */
+  .navbar:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
