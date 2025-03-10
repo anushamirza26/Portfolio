@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.c2fe7bb0.css",
+    "main.js": "/Portfolio/static/js/main.3e466e3a.js",
+    "static/js/453.ed3810f9.chunk.js": "/Portfolio/static/js/453.ed3810f9.chunk.js",
+    "static/media/spacex cert.png": "/Portfolio/static/media/spacex cert.7ea0e8e50de9e194f873.png",
+    "static/media/Anusha.png": "/Portfolio/static/media/Anusha.0a682155097d06912f4d.png",
+    "static/media/faysal cert.png": "/Portfolio/static/media/faysal cert.29b739f40046044937f5.png",
+    "static/media/cargo.jpg": "/Portfolio/static/media/cargo.caf690e3eaea0c62e130.jpg",
+    "static/media/focus first.jpg": "/Portfolio/static/media/focus first.f5ffd7c447f5f44eef59.jpg",
+    "static/media/flick.jpg": "/Portfolio/static/media/flick.19014f647e3e7415f3ed.jpg",
+    "static/media/paysys cert.png": "/Portfolio/static/media/paysys cert.7262f22de6fd35738393.png",
+    "static/media/Anusha-resume.pdf": "/Portfolio/static/media/Anusha-resume.3a74a76c668e332b2384.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.c2fe7bb0.css.map": "/Portfolio/static/css/main.c2fe7bb0.css.map",
+    "main.3e466e3a.js.map": "/Portfolio/static/js/main.3e466e3a.js.map",
+    "453.ed3810f9.chunk.js.map": "/Portfolio/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2fe7bb0.css",
+    "static/js/main.3e466e3a.js"
+  ]
+}
